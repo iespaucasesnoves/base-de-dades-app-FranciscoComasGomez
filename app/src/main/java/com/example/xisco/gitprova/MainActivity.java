@@ -10,6 +10,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,7 +40,7 @@ public class MainActivity extends ListActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent in=new Intent(getApplicationContext(),EditaVi.class);
+                        Intent in=new Intent(getApplicationContext(),AfegirVi.class);
                         in.putExtra("ID", "");
                         startActivity(in);
                     }

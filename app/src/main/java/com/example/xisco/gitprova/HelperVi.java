@@ -32,7 +32,7 @@ public class HelperVi extends SQLiteOpenHelper {
     public static final String TABLE_TIPUS = "tipus";
     public static final String COLUMN__TIPUS = "tipus";
     private static final String DATABASE_NAME = "wineapp";
-    private static final int DATABASE_VERSION = 1; // Controla la versió de la base de dades
+    private static final int DATABASE_VERSION = 5; // Controla la versió de la base de dades
 
     // Setències de creació de la base de dades
     private static final String DATABASE_CREATE_VI = "create table "
@@ -83,6 +83,12 @@ public class HelperVi extends SQLiteOpenHelper {
         database.execSQL(" insert into " + TABLE_TIPUS + "(tipus) values(('Espumós'))");
         database.execSQL(" insert into " + TABLE_TIPUS + "(tipus) values(('Cervesa'))");
         database.execSQL(" insert into " + TABLE_TIPUS + "(tipus) values(('Altres'))");
+        database.execSQL(" insert into " + TABLE_VI + "(nomvi) values(('vi generic 1'))");
+        database.execSQL(" insert into " + TABLE_VI + "(nomvi) values(('vi generic 2'))");
+        database.execSQL(" insert into " + TABLE_BODEGA + "(nombodega) values(('bodega 1'))");
+        database.execSQL(" insert into " + TABLE_BODEGA + "(nombodega) values(('bodega 2'))");
+        database.execSQL(" insert into " + TABLE_DENOMINACIO + "(nomdenominacio) values(('bodega 1'))");
+        database.execSQL(" insert into " + TABLE_DENOMINACIO + "(nomdenominacio) values(('bodega 2'))");
     }
 
     @Override
