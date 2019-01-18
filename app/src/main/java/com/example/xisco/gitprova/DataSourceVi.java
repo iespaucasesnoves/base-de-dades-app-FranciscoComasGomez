@@ -96,7 +96,6 @@ public class DataSourceVi {
         cursor.close();
         return vi;
     }
-
     public List<Vi> getAllVi() {
         List<Vi> vins = new ArrayList<Vi>();
         Cursor cursor = database.query(HelperVi.TABLE_VI, allColumnsVi, null, null, null, null,
