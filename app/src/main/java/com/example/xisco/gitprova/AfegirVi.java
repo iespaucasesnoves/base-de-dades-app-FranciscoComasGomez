@@ -21,20 +21,20 @@ public class AfegirVi extends AppCompatActivity implements View.OnClickListener{
     }
     @Override
     public void onClick(View v) {
-        nomVi = findViewById(R.id.afgNomVi);
-        anada = findViewById(R.id.afgAnada);
-        com = findViewById(R.id.afgCom);
-        data = findViewById(R.id.afgData);
-        gra = findViewById(R.id.afgGra);
-        den = findViewById(R.id.afgDen);
-        bodega = findViewById(R.id.afgBod);
-        lloc = findViewById(R.id.afgLloc);
+        nomVi = findViewById(R.id.nomVi);
+        anada = findViewById(R.id.anada);
+        com = findViewById(R.id.comentari);
+        data = findViewById(R.id.data);
+        gra = findViewById(R.id.graduacio);
+        den = findViewById(R.id.denominacio);
+        bodega = findViewById(R.id.bodega);
+        lloc = findViewById(R.id.lloc);
         nota = findViewById(R.id.afgNota);
-        preu = findViewById(R.id.afgPreu);
-        tipus = findViewById(R.id.afgTipus);
-        gust = findViewById(R.id.afgValGust);
-        olf = findViewById(R.id.afgValOlf);
-        vis = findViewById(R.id.afgValVisual);
+        preu = findViewById(R.id.preu);
+        tipus = findViewById(R.id.tipus);
+        gust = findViewById(R.id.valoracioGust);
+        olf = findViewById(R.id.valoracioOlfativo);
+        vis = findViewById(R.id.valoracioVIsual);
         String deno = den.getText().toString();
         if(v == afg){
 

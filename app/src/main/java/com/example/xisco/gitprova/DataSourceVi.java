@@ -19,6 +19,7 @@ public class DataSourceVi {
             HelperVi.COLUMN_VALOLFATIVA, HelperVi.COLUMN_VALGUSTATIVA,
             HelperVi.COLUMN_VALVISUAL, HelperVi.COLUMN_NOTA, HelperVi.COLUMN_FOTO,
             HelperVi.COLUMN_TIPUS};
+    private String[] tipusColumn = {HelperVi.COLUMN__TIPUS};
 
     public DataSourceVi(Context context) { //CONSTRUCTOR
         dbAjuda = new HelperVi(context);
@@ -110,7 +111,20 @@ public class DataSourceVi {
         cursor.close();
         return vins;
     }
-
+    public List<String> getAllTipus() {
+        List<String> tipus = new ArrayList<String>();
+        Cursor cursorT = database.query(HelperVi.TABLE_TIPUS, tipusColumn, null, null, null, null,
+                HelperVi.COLUMN_TIPUS + " DESC");
+        cursorT.moveToFirst();
+        while (!cursorT.isAfterLast()) {
+            String t = cursorT.toString();
+            tipus.add(t);
+            cursorT.moveToNext();
+        }
+        // Make sure to close the cursor
+        cursorT.close();
+        return tipus;
+    }
     private Vi cursorToVi(Cursor cursor) {
         Vi v = new Vi();
         v.setId(cursor.getLong(0));

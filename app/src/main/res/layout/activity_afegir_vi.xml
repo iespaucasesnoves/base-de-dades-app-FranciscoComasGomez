@@ -7,7 +7,7 @@
     tools:context=".AfegirVi">
 
     <EditText
-        android:id="@+id/afgGra"
+        android:id="@+id/graduacio"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
@@ -20,7 +20,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgAnada"
+        android:id="@+id/anada"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
@@ -33,7 +33,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgLloc"
+        android:id="@+id/lloc"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
@@ -46,7 +46,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgCom"
+        android:id="@+id/comentari"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
@@ -59,7 +59,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgData"
+        android:id="@+id/data"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
@@ -72,7 +72,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgBod"
+        android:id="@+id/bodega"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginTop="4dp"
@@ -85,7 +85,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgPreu"
+        android:id="@+id/preu"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
@@ -98,7 +98,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgDen"
+        android:id="@+id/denominacio"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
@@ -111,7 +111,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgValGust"
+        android:id="@+id/valoracioGust"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
@@ -124,7 +124,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgValOlf"
+        android:id="@+id/valoracioOlfativo"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
@@ -137,7 +137,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgValVisual"
+        android:id="@+id/valoracioVIsual"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
@@ -179,7 +179,7 @@
         android:layout_marginTop="8dp"
         android:text="Anada"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgNomVi" />
+        app:layout_constraintTop_toBottomOf="@+id/nomVi" />
 
     <TextView
         android:id="@+id/textView6"
@@ -199,7 +199,7 @@
         android:layout_marginEnd="148dp"
         android:text="Lloc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgTipus" />
+        app:layout_constraintTop_toBottomOf="@+id/tipus" />
 
     <TextView
         android:id="@+id/textView9"
@@ -209,7 +209,7 @@
         android:layout_marginEnd="110dp"
         android:text="Graduacio"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgLloc" />
+        app:layout_constraintTop_toBottomOf="@+id/lloc" />
 
     <TextView
         android:id="@+id/textView10"
@@ -219,7 +219,7 @@
         android:layout_marginTop="8dp"
         android:text="Data"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgCom" />
+        app:layout_constraintTop_toBottomOf="@+id/comentari" />
 
     <TextView
         android:id="@+id/textView11"
@@ -229,7 +229,7 @@
         android:layout_marginTop="8dp"
         android:text="Comentari"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgAnada" />
+        app:layout_constraintTop_toBottomOf="@+id/anada" />
 
     <TextView
         android:id="@+id/textView12"
@@ -239,7 +239,7 @@
         android:layout_marginEnd="128dp"
         android:text="Bodega"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgGra" />
+        app:layout_constraintTop_toBottomOf="@+id/graduacio" />
 
     <TextView
         android:id="@+id/textView13"
@@ -249,7 +249,7 @@
         android:layout_marginTop="8dp"
         android:text="Denominacio"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgData" />
+        app:layout_constraintTop_toBottomOf="@+id/data" />
 
     <TextView
         android:id="@+id/textView14"
@@ -259,7 +259,7 @@
         android:layout_marginEnd="141dp"
         android:text="Preu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgBod" />
+        app:layout_constraintTop_toBottomOf="@+id/bodega" />
 
     <TextView
         android:id="@+id/textView15"
@@ -269,7 +269,7 @@
         android:layout_marginTop="8dp"
         android:text="Valoracio olfativa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgDen" />
+        app:layout_constraintTop_toBottomOf="@+id/denominacio" />
 
     <TextView
         android:id="@+id/textView16"
@@ -279,7 +279,7 @@
         android:layout_marginEnd="80dp"
         android:text="Valoracio gust"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgPreu" />
+        app:layout_constraintTop_toBottomOf="@+id/preu" />
 
     <TextView
         android:id="@+id/textView17"
@@ -289,7 +289,7 @@
         android:layout_marginTop="8dp"
         android:text="Valoracio visual"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgValOlf" />
+        app:layout_constraintTop_toBottomOf="@+id/valoracioOlfativo" />
 
     <TextView
         android:id="@+id/textView18"
@@ -299,10 +299,10 @@
         android:layout_marginEnd="140dp"
         android:text="Nota"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgValGust" />
+        app:layout_constraintTop_toBottomOf="@+id/valoracioGust" />
 
     <EditText
-        android:id="@+id/afgNomVi"
+        android:id="@+id/nomVi"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
@@ -315,7 +315,7 @@
         tools:textSize="12sp" />
 
     <EditText
-        android:id="@+id/afgTipus"
+        android:id="@+id/tipus"
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
@@ -338,6 +338,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/afgValVisual" />
+        app:layout_constraintTop_toBottomOf="@+id/valoracioVIsual" />
 
 </android.support.constraint.ConstraintLayout>
