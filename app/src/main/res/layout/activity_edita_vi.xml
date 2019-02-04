@@ -13,6 +13,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="Graduacio"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +41,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="Lloc"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,6 +55,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="Comentari"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,6 +70,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="Data"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,6 +84,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="Bodega"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,14 +93,14 @@
 
     <EditText
         android:id="@+id/preu"
-        android:layout_width="164dp"
+        android:layout_width="42dp"
         android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginEnd="57dp"
         android:ems="10"
+        android:hint="Preu"
         android:inputType="textPersonName"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nota"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         tools:textSize="12sp" />
 
@@ -106,6 +111,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="Denominacio"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,6 +125,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="6dp"
         android:ems="10"
+        android:hint="Val. Gust"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,8 +137,9 @@
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="Val. Olf."
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,22 +150,23 @@
         android:id="@+id/valoracioVIsual"
         android:layout_width="164dp"
         android:layout_height="33dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="Val. Visual"
         android:inputType="textPersonName"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
         tools:textSize="12sp" />
 
     <EditText
         android:id="@+id/nota"
-        android:layout_width="164dp"
+        android:layout_width="66dp"
         android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginEnd="8dp"
         android:ems="12"
+        android:hint="Nota"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -196,11 +205,11 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="141dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="71dp"
         android:text="Preu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bodega" />
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/valoracioVIsual" />
 
     <TextView
         android:id="@+id/textView15"
@@ -220,27 +229,27 @@
         android:layout_marginEnd="80dp"
         android:text="Valoracio gust"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/preu" />
+        app:layout_constraintTop_toBottomOf="@+id/bodega" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="72dp"
         android:text="Valoracio visual"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/valoracioOlfativo" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valoracioGust" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="140dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="44dp"
         android:text="Nota"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/valoracioGust" />
+        app:layout_constraintTop_toBottomOf="@+id/valoracioVIsual" />
 
     <EditText
         android:id="@+id/nomVi"
@@ -259,14 +268,11 @@
         android:id="@+id/update"
         android:layout_width="wrap_content"
         android:layout_height="39dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="40dp"
         android:text="Actualitzar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/delete"

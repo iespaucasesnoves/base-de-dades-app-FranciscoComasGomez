@@ -35,7 +35,7 @@ public class EditaVi extends AppCompatActivity implements View.OnClickListener {
         montaSpinners(vi.getTipus());
     }
     private void iniciar(){
-        spinner = (Spinner) findViewById(R.id.spTipus);
+        spinner = findViewById(R.id.spTipus);
         nomVi = findViewById(R.id.nomVi);
         anada = findViewById(R.id.anada);
         com = findViewById(R.id.comentari);
@@ -44,7 +44,7 @@ public class EditaVi extends AppCompatActivity implements View.OnClickListener {
         den = findViewById(R.id.denominacio);
         bodega = findViewById(R.id.bodega);
         lloc = findViewById(R.id.lloc);
-        nota = findViewById(R.id.preu);
+        nota = findViewById(R.id.nota);
         gust = findViewById(R.id.valoracioGust);
         olf = findViewById(R.id.valoracioOlfativo);
         vis = findViewById(R.id.valoracioVIsual);
@@ -94,8 +94,9 @@ public class EditaVi extends AppCompatActivity implements View.OnClickListener {
         viE.setIdDenominacio(Long.parseLong(den.getText().toString()));
         viE.setIdBodega(Long.parseLong(bodega.getText().toString()));
         viE.setLloc(lloc.getText().toString());
-        viE.setNota(Integer.valueOf(nota.getText().toString()));
-        viE.setPreu(Double.valueOf(preu.getText().toString()));
+        viE.setNota(Integer.parseInt(nota.getText().toString()));
+        viE.setPreu(Double.parseDouble(preu.getText().toString()));
+        viE.setTipus(spinner.getSelectedItem().toString());
         viE.setTipus(spinner.getSelectedItem().toString());
         viE.setValGustativa(gust.getText().toString());
         viE.setValOlfativa(olf.getText().toString());
@@ -107,7 +108,9 @@ public class EditaVi extends AppCompatActivity implements View.OnClickListener {
     }
     private void montaSpinners(String t) {
         List<String> llista;
+        bd.open();
         llista=bd.getAllTipus();
+        bd.close();
         // Crear adapter
         ArrayAdapter<String> dataAdapter = new
                 ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, llista);
